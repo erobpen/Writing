@@ -45,6 +45,14 @@ This specification is still in development. It will become the authoritative gui
 - Visualization approach: the article should use clear explanatory figures, not generic AI-themed decoration. Figures should help writers understand the SDA process, the roles in the workflow, the setup, and the choices they may face.
 - Reader command test set: the author will test and refine these writer-facing commands for future readers: Save Version, Compare Versions, Restore Previous Version, and Publish Backup to GitHub.
 - Command design principle: these commands should be described as ordinary writing safety actions, not as Git commands, even if Git/GitHub provides the underlying implementation.
+- Expanded tool-evolution narrative: Part 1 should frame AI-assisted writing as part of a long history of writing and computer-mediated communication tools: pen and paper, typewriters, computers, text editors, spellcheckers, autocorrect, autocomplete, earlier language models, LLM chat assistants, and now agentic writing workflows.
+- Communication-with-computers theme: the article should note that communicating naturally with computers is an old goal. LLMs make it newly practical to communicate with computers in language closer to how humans communicate with each other.
+- Important caution: even though LLMs make computers feel more conversational, the computer is not human. Natural language can simplify interaction, but it can also mislead non-engineers into thinking the system understands, verifies, or intends things as a person would.
+- Engineer/non-engineer contrast: engineers have long experience communicating with computers through formal languages, commands, APIs, and structured workflows. LLMs simplify that interaction for engineers, but for non-engineers the new natural-language interface can be both powerful and confusing.
+- SDA bridge: the article should present SDA as a way to bring structure, verification, and author control into natural-language collaboration with AI.
+- Future-article note: the deeper question of how humans communicate with computers through natural language, and why this can help or mislead non-engineers, should be flagged as a topic for future articles.
+- Repository reference: one reference in the article should point to this GitHub repository, `https://github.com/erobpen/Writing`, so curious readers can inspect the evolving specification, workflow, and supporting materials.
+- Process transparency: at the end of the project, this chat or a curated version of it may be exported to Markdown and included or linked, after review for privacy and relevance, so readers can see how the article was developed through SDA.
 
 ## Proposed Decisions
 
@@ -58,8 +66,10 @@ This specification is still in development. It will become the authoritative gui
 ## Article Structure
 
 - Part 1: personal essay and legitimacy argument, roughly 1/5 of the article.
-  - Explain AI-assisted writing as an evolution of earlier writing tools.
+  - Explain AI-assisted writing as part of a long evolution of writing tools, from pen and paper to typewriters, computers, text editors, language-model-based writing aids, LLM assistants, and agentic writing workflows.
   - Connect LLM-based writing assistants to earlier tools such as spellcheckers, autocorrect, and autocomplete, while making clear that modern LLMs are a new and more powerful step.
+  - Introduce the older goal of communicating with computers in more natural human language, and explain why LLMs make this newly practical.
+  - Add the caution that computers are still not humans: natural language lowers the barrier, but it does not remove the need for structure, verification, and author responsibility.
   - Establish the author's position that using AI is not cheating when the human remains the author, decision-maker, and accountable editor.
 
 - Part 2: high-level SDA theory, roughly 2/5 of the article.
@@ -106,7 +116,7 @@ The article should use figures to make SDA understandable for non-developer writ
 - Prompt:
 
 ```text
-Create a clean editorial timeline diagram for a Medium article. Show the evolution of writing assistance from spellchecker, autocorrect, autocomplete, grammar assistant, LLM chat assistant, to agentic writing assistant. The mood should be thoughtful and professional, not futuristic hype. Use a light background, simple icons, and clear horizontal progression. Leave generous space for labels if text will be added later. No brand logos.
+Create a clean editorial timeline diagram for a Medium article. Show the evolution of writing and computer-mediated writing assistance from pen and paper, typewriter, computer text editor, spellchecker, autocorrect, autocomplete, earlier language models, LLM chat assistant, to agentic writing assistant. The mood should be thoughtful and professional, not futuristic hype. Use a light background, simple icons, and clear horizontal progression. Leave generous space for labels if text will be added later. No brand logos.
 ```
 
 #### Figure 2: The SDA Loop

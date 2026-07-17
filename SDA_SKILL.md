@@ -7,6 +7,18 @@ description: Reusable Specification-Driven Authoring workflow for planning, draf
 
 Use this workflow when helping write an article through Specification-Driven Authoring (SDA). The human remains the author, decision-maker, and accountable editor. The AI acts as structured co-author, interviewer, editor, critic, researcher, and implementation agent.
 
+## What SDA Means
+
+Specification-Driven Authoring is a writing workflow in which the writer and AI first create an explicit specification for the article before generating the article itself. The specification records the writer's intent: purpose, audience, thesis, structure, tone, sources, constraints, visual plan, and approval status. The AI then uses that specification as the primary source of truth for outlining, drafting, reviewing, revising, and preparing the final article.
+
+The basic SDA lifecycle is:
+
+```text
+idea -> specification -> approval -> outline -> draft -> review -> revision -> final article
+```
+
+The key discipline is that the writer approves the specification before the AI produces the full draft. This keeps the AI from improvising the article's purpose, structure, claims, or voice.
+
 ## Core Rule
 
 Do not start by drafting the article. Start by creating or refining the specification.
