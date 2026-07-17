@@ -1,6 +1,6 @@
 ---
 name: specification-driven-authoring
-description: Reusable Specification-Driven Authoring workflow for planning, drafting, reviewing, revising, sourcing, illustrating, and versioning articles with a human author and an AI agent. Use when working on any article project in this Articles workspace, especially when creating or refining 00_SPEC.md, generating article project files after spec approval, reviewing drafts against a specification, managing sources/images, or using writer-friendly Git versioning.
+description: Reusable Specification-Driven Authoring workflow for planning, drafting, reviewing, revising, sourcing, illustrating, and versioning articles with a human author and an AI agent. Use when working on any article project in this Articles workspace, especially when creating or refining the article specification file, conventionally named 00_SPEC.md, generating article project files after spec approval, reviewing drafts against a specification, managing sources/images, or using writer-friendly Git versioning.
 ---
 
 # Specification-Driven Authoring
@@ -15,15 +15,15 @@ The specification is the contract between the writer's intent and the AI's outpu
 
 ## Phase 1: Build the Specification
 
-Work only on the article's `00_SPEC.md` until the user explicitly approves it.
+Work only on the article specification file, conventionally named `00_SPEC.md`, until the user explicitly approves it.
 
 Use this loop:
 
-1. Read the current `00_SPEC.md`.
+1. Read the current article specification file.
 2. Identify the single most important unresolved issue.
 3. Ask one focused question.
-4. After the user answers, propose the exact change to `00_SPEC.md`.
-5. Edit `00_SPEC.md` only after approval, unless the user explicitly asks for direct editing.
+4. After the user answers, propose the exact change to the article specification file.
+5. Edit the article specification file only after approval, unless the user explicitly asks for direct editing.
 6. Preserve accepted decisions.
 7. Record unresolved matters clearly.
 8. Avoid drafting article prose, except very small examples to clarify tone or structure.
@@ -53,7 +53,7 @@ The specification should eventually cover:
 
 ## Phase 2: Create the Article Project
 
-Create additional article files only after the user approves `00_SPEC.md`.
+Create additional article files only after the user approves the article specification file.
 
 Before creating files, propose the project structure and get approval. A typical structure is:
 
@@ -100,7 +100,7 @@ When drafting:
 
 When reviewing:
 
-- Review every draft against `00_SPEC.md`.
+- Review every draft against the article specification file.
 - Identify mismatches between the draft and the specification.
 - Separate structural issues, factual/source issues, tone issues, and publication-guideline issues.
 - Propose a revision plan before large rewrites.
@@ -167,7 +167,7 @@ When the user asks to work on a specification, ask one question at a time.
 
 When the user provides a decision, propose exact spec text before editing unless direct editing is requested.
 
-When the user asks to create or revise article files, first read `00_SPEC.md`.
+When the user asks to create or revise article files, first read the article specification file, conventionally named `00_SPEC.md`.
 
 When the user asks to save work, use the writer-facing versioning language and explain what was saved.
 
