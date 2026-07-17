@@ -43,6 +43,8 @@ This specification is still in development. It will become the authoritative gui
 - Writer-facing Git language: the article should translate Git concepts into writer-friendly actions such as Save Version, Compare Versions, Restore Previous Version, and Publish Backup to GitHub.
 - Application gap: the article should state that writers should not have to assemble VS Code, Codex, and Git themselves forever. There is a clear need for a dedicated writing application that provides SDA, AI collaboration, source tracking, image handling, and version history out of the box.
 - Visualization approach: the article should use clear explanatory figures, not generic AI-themed decoration. Figures should help writers understand the SDA process, the roles in the workflow, the setup, and the choices they may face.
+- Reader command test set: the author will test and refine these writer-facing commands for future readers: Save Version, Compare Versions, Restore Previous Version, and Publish Backup to GitHub.
+- Command design principle: these commands should be described as ordinary writing safety actions, not as Git commands, even if Git/GitHub provides the underlying implementation.
 
 ## Proposed Decisions
 
@@ -71,6 +73,7 @@ This specification is still in development. It will become the authoritative gui
   - Refer back to Part 2 wherever possible, so readers understand how each practical step implements the SDA theory.
   - Part 3A should explain setup.
   - Part 3B should explain usage.
+  - Part 3B should show how the writer uses the four versioning commands: Save Version, Compare Versions, Restore Previous Version, and Publish Backup to GitHub.
   - The concrete solution should be VS Code + Codex + Git-based versioning.
   - The tutorial should show writers how to use this setup for an SDA workflow, not merely how to install tools.
 
