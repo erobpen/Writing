@@ -39,6 +39,10 @@ This specification is still in development. It will become the authoritative gui
 - Unsourced-claim rule: if no credible external source is found after a reasonable search, the claim may still appear only if it is clearly framed as the author's interpretation, hypothesis, original observation, or workflow experience.
 - No false authority: the article should not invent sources, imply consensus where none was found, or present an unsupported claim as established fact.
 - Originality allowance: it is acceptable if the author appears to be making a new or uncommon claim, but the article should signal that honestly rather than forcing a weak citation.
+- Versioning philosophy: Git and GitHub should be presented to writers as safe versioning, not as developer tooling they must deeply understand.
+- Writer-facing Git language: the article should translate Git concepts into writer-friendly actions such as Save Version, Compare Versions, Restore Previous Version, and Publish Backup to GitHub.
+- Application gap: the article should state that writers should not have to assemble VS Code, Codex, and Git themselves forever. There is a clear need for a dedicated writing application that provides SDA, AI collaboration, source tracking, image handling, and version history out of the box.
+- Visualization approach: the article should use clear explanatory figures, not generic AI-themed decoration. Figures should help writers understand the SDA process, the roles in the workflow, the setup, and the choices they may face.
 
 ## Proposed Decisions
 
@@ -73,6 +77,111 @@ This specification is still in development. It will become the authoritative gui
 - Conclusion:
   - Reinforce that SDA is one step toward democratizing agentic AI for non-developers.
   - Note that future articles may cover different variants of this setup, so this article presents the author's current practical version rather than the only possible solution.
+  - Close by naming the need for a future purpose-built SDA writing application that gives non-developers these capabilities out of the box.
+
+## Visual Strategy and Figure Prompts
+
+The article should use figures to make SDA understandable for non-developer writers. The visuals should be simple, editorial, and diagram-like, with readable labels and no unnecessary decoration. If images are generated with AI, prompts should request clean composition, high contrast, and large legible text. If the image model cannot reliably render text, the image should be generated without text and labels should be added manually afterward.
+
+### SDA Decomposition for Visuals
+
+- Tool evolution angle: show AI-assisted writing as the next step after spellcheckers, autocorrect, autocomplete, grammar tools, and earlier language models.
+- Process angle: show SDA as a workflow that moves from idea, to specification, to approval, to draft, to review, to revision, to final article.
+- Role angle: show the human writer as author and decision-maker, with AI acting as assistant, editor, critic, researcher, and implementation agent.
+- Control angle: show that the specification acts as the contract between the writer's intent and the AI's output.
+- Versioning angle: show Git/GitHub as a writer-friendly safety layer behind actions such as Save Version, Compare Versions, Restore Previous Version, and Publish Backup.
+- Reader journey angle: show the practical path a writer follows in the tutorial: set up tools, create the spec, iterate with Codex, save versions, generate draft, verify sources, revise, and publish.
+- Decision-flow angle: show branches readers may encounter, such as source found vs. no source found, author approves vs. author revises, or draft matches spec vs. draft needs revision.
+
+### Proposed Figures
+
+#### Figure 1: From Writing Assistance to Agentic Writing
+
+- Suggested file name: `figure_01_tool_evolution.png`
+- Article location: Part 1.
+- Purpose: help readers see LLM assistants as an evolution of earlier writing tools rather than a mysterious break from normal writing practice.
+- Prompt:
+
+```text
+Create a clean editorial timeline diagram for a Medium article. Show the evolution of writing assistance from spellchecker, autocorrect, autocomplete, grammar assistant, LLM chat assistant, to agentic writing assistant. The mood should be thoughtful and professional, not futuristic hype. Use a light background, simple icons, and clear horizontal progression. Leave generous space for labels if text will be added later. No brand logos.
+```
+
+#### Figure 2: The SDA Loop
+
+- Suggested file name: `figure_02_sda_loop.png`
+- Article location: Part 2.
+- Purpose: define the core SDA process visually.
+- Prompt:
+
+```text
+Create a clear process-loop diagram for Specification-Driven Authoring. Show these stages in a circular workflow: idea, writer-AI questions, specification, human approval, draft generation, review against specification, revision, final article. Emphasize that the human writer approves the specification and remains in control. Use an elegant editorial style, light background, restrained colors, and simple arrows. Make it understandable to non-developer writers. Avoid code imagery.
+```
+
+#### Figure 3: Roles in Specification-Driven Authoring
+
+- Suggested file name: `figure_03_roles_and_control.png`
+- Article location: Part 2.
+- Purpose: explain authorship and control.
+- Prompt:
+
+```text
+Create a simple role map for an AI-assisted writing workflow. Put the human writer at the center as author and decision-maker. Around the writer, show the AI agent as assistant, editor, critic, researcher, and implementation helper. Show the specification as a shared document that guides the AI. Show sources and version history as supporting safeguards. The style should be calm, clear, and educational, suitable for a technology essay on Medium.
+```
+
+#### Figure 4: Specification as Contract
+
+- Suggested file name: `figure_04_spec_as_contract.png`
+- Article location: Part 2.
+- Purpose: show why SDA is different from simply prompting an AI to write.
+- Prompt:
+
+```text
+Create a conceptual diagram showing a writing specification as the contract between human intent and AI-generated output. On the left, show the writer's goals, audience, tone, claims, sources, constraints, and structure. In the center, show the specification document as the organizing layer. On the right, show outline, draft, review, revision, and final article. Use a professional editorial diagram style with clean boxes and arrows. No software logos.
+```
+
+#### Figure 5: Writer-Friendly Versioning
+
+- Suggested file name: `figure_05_writer_friendly_versioning.png`
+- Article location: Part 3A or Part 3B.
+- Purpose: translate Git into writer terms.
+- Prompt:
+
+```text
+Create an explanatory diagram that translates Git version control into writer-friendly actions. Show four actions: Save Version, Compare Versions, Restore Previous Version, and Publish Backup to GitHub. Present Git as an invisible safety layer behind the writing workflow, not as a developer tool the writer must master. Use a calm, trustworthy style, with document snapshots or stacked pages as visual metaphors.
+```
+
+#### Figure 6: Setup and Usage Flow
+
+- Suggested file name: `figure_06_setup_usage_flow.png`
+- Article location: Part 3.
+- Purpose: connect the practical tutorial back to the SDA theory.
+- Prompt:
+
+```text
+Create a two-part flow diagram for writers using Specification-Driven Authoring with VS Code, Codex, and Git. Part A is setup: install/open VS Code, connect Codex, prepare project folder, connect GitHub/versioning. Part B is usage: create specification, answer AI questions, approve spec changes, save version, generate draft, verify sources, revise, publish. Use simple icons and arrows, with a clean Medium-style editorial look. Make the flow approachable for non-developers.
+```
+
+#### Figure 7: Claim and Source Verification Flow
+
+- Suggested file name: `figure_07_source_verification.png`
+- Article location: Part 3B or references discussion.
+- Purpose: show how the workflow reduces hallucination risk.
+- Prompt:
+
+```text
+Create a decision-flow diagram for source verification in AI-assisted writing. Start with a claim in the draft. Then show: search for external source, credible source found, cite with numerical reference, or no source found, reframe as author's interpretation or remove claim. Include a final review step for hallucination risk. Use a clear, minimal editorial style and avoid clutter.
+```
+
+### Figure Selection Guidance
+
+- Required figures for the first article: Figure 1, Figure 2, Figure 3, Figure 5, and Figure 6.
+- Optional if the article becomes too long or visually crowded: Figure 4 and Figure 7.
+- The strongest visual sequence is:
+  - Part 1: Figure 1.
+  - Part 2: Figures 2 and 3, with Figure 4 only if needed.
+  - Part 3: Figures 5 and 6, with Figure 7 if source verification needs visual explanation.
+- Each figure should later have a caption, source/creation note, and alt text.
+- If figures are AI-generated by the author, the source line should identify them as author-created AI-assisted illustrations.
 
 ## Open Questions
 
