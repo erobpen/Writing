@@ -25,6 +25,16 @@ Do not start by drafting the article. Start by creating or refining the specific
 
 The specification is the contract between the writer's intent and the AI's output. It should define what the article is trying to do before the AI produces the article itself.
 
+## Quality Standard
+
+When creating article files from an approved specification, optimize for quality above speed, token economy, or minimal model usage.
+
+- Use the strongest available model unless the user explicitly chooses another model or imposes a cost, speed, or token constraint.
+- Use as much context and output length as needed to follow the specification well.
+- Do not compress reasoning, research, review, or revision steps merely to save tokens.
+- Prefer careful staged work over a fast single-pass draft when quality would benefit.
+- Treat the approved specification, source verification, publication requirements, and author voice as higher priorities than speed.
+
 ## Phase 1: Build the Specification
 
 Work only on the article specification file, conventionally named `00_SPEC.md`, until the user explicitly approves it.
@@ -104,6 +114,7 @@ Generate the outline from the approved specification, not from memory.
 
 When drafting:
 
+- Prioritize quality over speed or token count.
 - Preserve the author's voice and decisions.
 - Keep article sections aligned with the approved structure.
 - Avoid adding unsupported claims.
