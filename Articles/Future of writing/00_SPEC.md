@@ -1,6 +1,6 @@
 # Future of Writing
 
-This specification is still in development. It will become the authoritative guide for the article after the key decisions have been discussed, accepted, and recorded.
+This specification has been approved for article production. It is the authoritative guide for the article unless the author explicitly approves a later change.
 
 ## Confirmed Decisions
 
@@ -210,4 +210,4 @@ Create a decision-flow diagram for source verification in AI-assisted writing. S
 
 ## Approval Status
 
-- Not approved.
+- Approved for article production on July 18, 2026.

@@ -1,6 +1,6 @@
 ---
 name: specification-driven-authoring
-description: Reusable Specification-Driven Authoring workflow for planning, drafting, reviewing, revising, sourcing, illustrating, and versioning articles with a human author and an AI agent. Use when working on any article project in this Articles workspace, especially when creating or refining the article specification file, conventionally named 00_SPEC.md, generating article project files after spec approval, reviewing drafts against a specification, managing sources/images, or using writer-friendly Git versioning.
+description: Reusable Specification-Driven Authoring workflow for planning, drafting, reviewing, revising, sourcing, generating article images, and versioning articles with a human author and an AI agent. Use when working on any article project in this Articles workspace, especially when creating or refining the article specification file, conventionally named 00_SPEC.md, generating article project files after spec approval, reviewing drafts against a specification, managing sources/images, generating image prompts and image files, or using writer-friendly Git versioning.
 ---
 
 # Specification-Driven Authoring
@@ -86,9 +86,10 @@ Article Folder/
 ├── 02_SOURCES.md
 ├── 03_OUTLINE.md
 ├── 04_DRAFT.md
-├── 05_EDITORIAL_REVIEW.md
-├── 06_REVISION_PLAN.md
-├── 07_FINAL.md
+├── 05_IMAGE_PROMPTS.md
+├── 06_EDITORIAL_REVIEW.md
+├── 07_REVISION_PLAN.md
+├── 08_FINAL.md
 └── Images/
 ```
 
@@ -138,6 +139,11 @@ When revising:
 
 Use images to explain the article, not to decorate it generically.
 
+When the approved specification calls for images, create both:
+
+- a reusable image prompt set, usually in `05_IMAGE_PROMPTS.md`;
+- the actual image files, stored in the article's image folder.
+
 For each planned image or figure, record:
 
 - article location;
@@ -151,6 +157,10 @@ For each planned image or figure, record:
 Store images in a separate image folder when the project moves beyond specification. Use one image per file. Name image files according to how they are referenced in the article.
 
 If AI-generated images are used, identify them as author-created AI-assisted illustrations unless the publication requires different wording.
+
+After creating image prompts, use those prompts to generate the images unless the user explicitly asks for prompts only. Choose the best production approach for the article rather than asking the user to decide every visual detail. For explanatory diagrams, prioritize clarity over decorative polish: generated visuals may use minimal or no embedded text, with precise labels, captions, source lines, and alt text kept in the article when that will produce a more reliable result.
+
+Do not consider an article package complete while referenced image files are missing. Either generate the files, replace the references with prompt-only placeholders, or clearly mark the images as pending.
 
 ## Writer-Friendly Versioning
 

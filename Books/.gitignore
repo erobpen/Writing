@@ -1,0 +1,12 @@
+.DS_Store
+Thumbs.db
+*.tmp
+*.bak
+~$*
+
+# Local/private writing material
+.env
+.agents/
+SDA_full_chat_export.md
+private_notes/
+interview_raw/
