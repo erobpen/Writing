@@ -7,10 +7,11 @@ This specification has been approved for article production. It is the authorita
 - Working title: Future of Writing
 - Primary output: an article for Medium.
 - Possible publication target: Towards AI, where the author has published before.
+- Article-facing publication stance: keep the article journal-agnostic. Use target-publication guidelines internally for compliance, but do not name Towards AI in the article body or public reference list unless the author explicitly changes this decision.
 - Secondary output: the specification may later be reused to create a script for the author's fledgling YouTube channel.
 - Core subject: the use of AI and LLMs in writing, especially agentic writing through a Specification-Driven Authoring process.
 - Core position: using AI for writing is not cheating by default. It is part of the normal evolution of writing tools.
-- Historical framing: writers already used earlier language-model-like tools such as autocomplete, autocorrect, and spellcheckers. These were not modern LLMs, but they prepared the ground for today's AI assistants.
+- Historical framing: writers already used earlier language-model or language-model-like tools such as autocomplete, autocorrect, spellcheckers, and grammar checkers. Following Russell and Norvig's broad AI/NLP framing, these can be understood as language-modeling tasks even when specific implementations also rely on dictionaries, rules, or typo tables. They were not modern LLMs, but they prepared the ground for today's AI assistants.
 - Article direction: after introducing AI writing as an evolution of earlier tools, the article should explain the SDA process and how it works.
 - Practical angle: the article should acknowledge that, at present, there is no simple application for non-developers that fully supports this kind of agentic writing workflow.
 - Tutorial angle: the article should suggest the author's current setup, using VS Code, and include a short tutorial for setting up a usable SDA process.
@@ -83,7 +84,7 @@ This specification has been approved for article production. It is the authorita
 
 - Part 3: practical tutorial, roughly 2/5 of the article.
   - Refer back to Part 2 wherever possible, so readers understand how each practical step implements the SDA theory.
-  - Part 3A should explain setup.
+  - Part 3A should be a Windows-specific setup tutorial for non-developer writers, not a vague overview. Prefer GUI-first steps: install VS Code, install Codex from the VS Code Extensions button, create a GitHub account in the browser, create folders in Windows File Explorer, add `SDA_SKILL.md`, open the folder in VS Code, and give Codex a setup prompt so Codex handles the Git/versioning setup with writer-friendly language.
   - Part 3B should explain usage.
   - Part 3B should show how the writer uses the four versioning commands: Save Version, Compare Versions, Restore Previous Version, and Publish Backup to GitHub.
   - The concrete solution should be VS Code + Codex + Git-based versioning.
