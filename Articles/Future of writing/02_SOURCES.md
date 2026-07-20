@@ -118,6 +118,26 @@ Sources use the article's numerical citation style. Status values:
 - Status: Verified.
 - Use for: GitHub signup and verified-email requirement before repository tasks.
 
+[23] Rose Yao, "Celebrating 20 years of Google Translate: Fun facts, tips and new features to try," Google Blog, Apr. 28, 2026. Link: https://blog.google/products-and-platforms/products/translate/fun-facts-google-translate-20-years/
+
+- Status: Verified.
+- Use for: Google Translate beginning as an AI experiment in 2006, use of statistical machine learning and language models, and the 2016 shift to neural networks.
+
+[24] Jennifer DeCamp, "The Impact of Advances in Neural and Statistical MT on the Translation Workforce," Proceedings of AMTA 2018, vol. 2: MT Users' Track, pp. 234-243. Link: https://aclanthology.org/W18-1918/
+
+- Status: Verified.
+- Use for: machine translation changing translator work toward monitoring, evaluation, completeness, accuracy, and cultural context.
+
+[25] E. D. Yilmaz, I. Naumovska, and V. A. Aggarwal, "AI-Driven Labor Substitution: Evidence from Google Translate and ChatGPT," INSEAD Working Paper, 2023/24/EFE. Link: https://www.insead.edu/faculty-research/publications/working-papers/ai-driven-labor-substitution-evidence-google-translate
+
+- Status: Verified.
+- Use for: empirical evidence that Google's neural translation introduction in 2016-2017 reduced human translation transactions in an online labor market.
+
+[26] Max Roser, "Technology over the long run: zoom out to see how dramatically the world can change within a lifetime," Our World in Data, Feb. 22, 2023. Link: https://ourworldindata.org/technology-long-run
+
+- Status: Verified.
+- Use for: broad historical framing that technological change can transform society quickly and produce both beneficial and harmful consequences.
+
 ## Source Notes
 
 - Source [10] should be manually checked in the browser before final submission to Towards AI because Codex could not independently fetch YouTube metadata.

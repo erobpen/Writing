@@ -134,12 +134,12 @@ Create a clear screenshot-style tutorial figure showing a browser on a GitHub ac
 - File name: `figure_10_create_writing_folders.png`
 - Location: Part 3A, after the Windows File Explorer folder steps.
 - Caption draft: Create the writing folders in Windows File Explorer before asking Codex to configure the project.
-- Alt text: Screenshot-style guide showing Windows File Explorer with Documents, a Writing folder, a Future of writing article folder, and an Images folder.
+- Alt text: Screenshot-style guide showing Windows File Explorer with Documents, a Writing folder, a Name of your Article folder, and an Images folder.
 - Source note: Author-created instructional screenshot-style figure.
 - Prompt:
 
 ```text
-Create a clear screenshot-style tutorial figure showing Windows File Explorer. Show Documents > Writing > Future of writing > Images. Highlight the Writing folder, article folder, and Images folder. Use callouts that say create folders in File Explorer, not the terminal. Use a calm instructional style with large readable labels.
+Create a clear screenshot-style tutorial figure showing Windows File Explorer. Show Documents > Writing > Name of your Article > Images. Highlight the Writing folder, article folder, and Images folder. Use callouts that say create folders in File Explorer, not the terminal. Use a calm instructional style with large readable labels.
 ```
 
 ### Figure 11: Codex Setup Prompt
@@ -152,5 +152,5 @@ Create a clear screenshot-style tutorial figure showing Windows File Explorer. S
 - Prompt:
 
 ```text
-Create a clear screenshot-style tutorial figure showing VS Code with a Writing folder open. In the file explorer show SDA_SKILL.md, Future of writing, 00_SPEC.md, and Images. On the right show a Codex sidebar with a setup prompt beginning "I am a writer, not a developer." Highlight that Codex will set up Git versioning and ask one focused specification question. Use readable text and a clean instructional layout.
+Create a clear screenshot-style tutorial figure showing VS Code with a Writing folder open. In the file explorer show SDA_SKILL.md, Name of your Article, 00_SPEC.md, and Images. On the right show a Codex sidebar with a setup prompt beginning "I am a writer, not a developer." Highlight that Codex will set up Git versioning and ask one focused specification question. Use readable text and a clean instructional layout.
 ```

@@ -55,6 +55,14 @@ This specification has been approved for article production. It is the authorita
 - Repository reference: one reference in the article should point to this GitHub repository, `https://github.com/erobpen/Writing`, so curious readers can inspect the evolving specification, workflow, and supporting materials.
 - Process transparency: at the end of the project, this chat or a curated version of it may be exported to Markdown and included or linked, after review for privacy and relevance, so readers can see how the article was developed through SDA.
 - Part 1 reference candidate: include one sentence engaging with Max Kotin's YouTube video "Nobody Can Spot AI in Writing, Actually" as a recent argument that judging writing by suspected AI authorship is less useful than judging the quality of the text itself. This source should be verified before publication.
+- SDA/spellchecker analogy: Part 1 should explicitly note that using SDA is like using a spellchecker, grammar checker, autocorrect, or autocomplete in one important sense: the tool empowers the writer, but the writer still has to think, decide, revise, verify, and take responsibility for the result.
+- Reader navigation: near the end of Part 1, include a brief layout map of the article so readers can quickly understand how to navigate the argument, SDA theory, and tutorial sections.
+- Generic reader tutorial naming: the setup tutorial should not use this article's title, "Future of writing," as the reader's example folder. Use a generic placeholder such as `Name of your Article` so readers understand they are creating their own article project.
+- SDA skill customization: in the setup tutorial, explain that `SDA_SKILL.md` is the author's reusable workflow file, but readers may edit it or create their own version to fit their writing needs, genre, publication process, and preferred collaboration style.
+- Conclusion tension: the conclusion should acknowledge real resistance to AI-assisted writing. Some of that resistance is justified because LLMs can generate fluent but low-quality AI slop. The article should argue that the answer is not blanket rejection, but better workflows, judgment, and accountability.
+- Translation disruption example: the conclusion should include the author's family experience with translation and court interpreting. It should note that Google Translate began as an AI/machine-learning translation service in 2006, and that machine translation and later neural machine translation have affected translation work, pricing, and professional status. Personal claims about the author's parents and the author's own interpreting experience should be framed as personal experience.
+- Progress framing: the conclusion should state that technological progress can harm individual professions or workers even when it brings wider social benefits. The article should avoid naive optimism, but should also argue that fighting tool evolution is historically unproductive. The better response is to make the tools humane, accountable, and accessible.
+- Empowerment claim: the conclusion should say that AI-assisted writing can empower many more people to write, including non-native speakers and people who are not naturally strong writers but who have useful domain knowledge to share.
 
 ## Proposed Decisions
 
@@ -74,6 +82,8 @@ This specification has been approved for article production. It is the authorita
   - Add the caution that computers are still not humans: natural language lowers the barrier, but it does not remove the need for structure, verification, and author responsibility.
   - Include one sentence referencing Max Kotin's argument that attempts to detect AI writing can be misleading or harmful, and connect it to this article's position that the human writer's judgment, authorship, and responsibility matter more than whether AI was used as a tool.
   - Establish the author's position that using AI is not cheating when the human remains the author, decision-maker, and accountable editor.
+  - Add the analogy that SDA, like spellchecking or autocorrect, does not do the whole work. It lowers friction and increases capability, but the writer still supplies intent, judgment, revision, verification, and responsibility.
+  - End with a short article map: Part 1 explains legitimacy, Part 2 explains SDA theory, Part 3 shows a practical Windows setup and usage workflow.
 
 - Part 2: high-level SDA theory, roughly 2/5 of the article.
   - Define Specification-Driven Authoring in detail.
@@ -85,6 +95,8 @@ This specification has been approved for article production. It is the authorita
 - Part 3: practical tutorial, roughly 2/5 of the article.
   - Refer back to Part 2 wherever possible, so readers understand how each practical step implements the SDA theory.
   - Part 3A should be a Windows-specific setup tutorial for non-developer writers, not a vague overview. Prefer GUI-first steps: install VS Code, install Codex from the VS Code Extensions button, create a GitHub account in the browser, create folders in Windows File Explorer, add `SDA_SKILL.md`, open the folder in VS Code, and give Codex a setup prompt so Codex handles the Git/versioning setup with writer-friendly language.
+  - Part 3A should use a generic folder placeholder such as `Name of your Article`, not this article's title, when instructing readers to create their own article folder.
+  - Part 3A should explain that the author's `SDA_SKILL.md` can be reused as a starting point, but readers may edit or replace it with their own workflow file.
   - Part 3B should explain usage.
   - Part 3B should show how the writer uses the four versioning commands: Save Version, Compare Versions, Restore Previous Version, and Publish Backup to GitHub.
   - The concrete solution should be VS Code + Codex + Git-based versioning.
@@ -92,6 +104,11 @@ This specification has been approved for article production. It is the authorita
 
 - Conclusion:
   - Reinforce that SDA is one step toward democratizing agentic AI for non-developers.
+  - Acknowledge resistance to AI-assisted writing and admit that some of it is correct because LLMs can generate low-quality AI slop.
+  - Use translation as a personal and sourced example of technological disruption: the author's parents were translators and court interpreters, the author also worked as a court interpreter, and machine translation has affected the profession over decades.
+  - Note that Google Translate started in 2006, and neural machine translation accelerated disruption after 2016.
+  - Explain that progress can be socially beneficial while still painful in individual cases.
+  - Argue that AI-assisted writing can help non-native speakers and domain experts share knowledge that might otherwise remain unpublished.
   - Note that future articles may cover different variants of this setup, so this article presents the author's current practical version rather than the only possible solution.
   - Close by naming the need for a future purpose-built SDA writing application that gives non-developers these capabilities out of the box.
 

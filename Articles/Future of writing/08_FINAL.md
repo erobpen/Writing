@@ -16,6 +16,8 @@ Before large language models, before autocomplete, before spellcheckers, before 
 
 Then writing assistance became part of the software itself. Spellcheckers and grammar checkers made correction a normal feature of the writing surface [3]. AutoCorrect went further by changing text while the writer was still typing [4]. It is fair to understand these tools as part of the broader language-modeling tradition. Even when a particular implementation uses dictionaries, rules, or typo tables, the task can still be framed as modeling which words or sentences are likely and which corrections are plausible. Russell and Norvig place language models inside natural-language processing, and Jurafsky and Martin describe n-gram language models as a foundational way to estimate likely word sequences [5], [6]. These tools did not remove the writer. They changed the writer's environment.
 
+That is also how I understand Specification-Driven Authoring. Using SDA is not the same as pressing a button and receiving a finished article. It is closer, in spirit, to using a spellchecker, grammar checker, autocorrect, or autocomplete: the tool lowers friction and increases capability, but the writer still has to think, choose, revise, verify, and take responsibility. A spellchecker can catch a mistake, but it cannot decide what you mean. SDA can organize an AI-assisted writing process, but it cannot replace the writer's intent.
+
 Large language models are different in scale and behavior, but they are not the first language models to enter writing. What changed with systems such as GPT-3 was not the basic idea that language can be modeled. What changed was scale, generality, and interface: a model could now respond to natural-language instructions and examples across many tasks [7].
 
 That is why I do not see AI-assisted writing as a sudden moral rupture. I see it as a new stage in a long movement from physical writing tools to software writing tools, from software writing tools to language-aware writing tools, and from language-aware tools to agentic assistants that can participate in planning, drafting, checking, and revising.
@@ -33,6 +35,8 @@ Nor do I think the answer is to treat every suspicious sentence as evidence of g
 I agree with that direction. The question that matters most is not whether a tool was used. Writers have always used tools. The better question is whether the writer remains responsible for the text.
 
 My answer is Specification-Driven Authoring.
+
+The rest of this article follows that path. Part 2 defines SDA as a theory of AI-assisted writing: specification first, draft second, review always. Part 3 turns the theory into a Windows tutorial with VS Code, Codex, GitHub, and writer-friendly versioning. Part 3A shows setup. Part 3B shows daily use.
 
 ![Circular workflow with idea, writer-AI questions, specification, human approval, outline, draft, review against specification, revision, and final article.](Images/figure_02_sda_loop.png)
 
@@ -254,8 +258,8 @@ Now use Windows File Explorer, not a terminal.
 2. Open **Documents**.
 3. Create a new folder named `Writing`.
 4. Open the `Writing` folder.
-5. Create a folder for the first article, for example `Future of writing`.
-6. Open `Future of writing`.
+5. Create a folder for the first article, for example `Name of your Article`.
+6. Open `Name of your Article`.
 7. Create a folder named `Images`.
 
 The folder structure should begin like this:
@@ -263,11 +267,11 @@ The folder structure should begin like this:
 ```text
 Documents/
 `-- Writing/
-    `-- Future of writing/
+    `-- Name of your Article/
         `-- Images/
 ```
 
-![Screenshot-style guide showing Windows File Explorer with Documents, a Writing folder, a Future of writing article folder, and an Images folder.](Images/figure_10_create_writing_folders.png)
+![Screenshot-style guide showing Windows File Explorer with Documents, a Writing folder, a Name of your Article folder, and an Images folder.](Images/figure_10_create_writing_folders.png)
 
 *Figure 10. Create the writing folders in Windows File Explorer before asking Codex to configure the project. Source: author-created instructional screenshot-style figure.*
 
@@ -281,9 +285,11 @@ This article's project repository contains the reusable file [17]. Open:
 https://github.com/erobpen/Writing
 ```
 
-Find `SDA_SKILL.md`. Save or copy it into the `Writing` folder, beside the `Future of writing` folder.
+Find `SDA_SKILL.md`. Save or copy it into the `Writing` folder, beside the `Name of your Article` folder.
 
 One simple way is to open `SDA_SKILL.md` on GitHub, copy its full text, create a new file named `SDA_SKILL.md` in the `Writing` folder, paste the text, and save it. The exact method matters less than the result: the file must be named `SDA_SKILL.md`, and it must sit directly inside `Writing`.
+
+The `SDA_SKILL.md` file in my repository is the version I have written for my own writing process. It is a starting point, not a law. You can edit it, simplify it, expand it, or create a different `SDA_SKILL.md` that fits your genre, publication style, research needs, language, and preferred way of working with AI.
 
 The folder should now look like this:
 
@@ -291,7 +297,7 @@ The folder should now look like this:
 Documents/
 `-- Writing/
     |-- SDA_SKILL.md
-    `-- Future of writing/
+    `-- Name of your Article/
         `-- Images/
 ```
 
@@ -305,11 +311,11 @@ Now return to VS Code.
 2. Choose the `Writing` folder in Documents.
 3. Click **Select Folder**.
 
-VS Code should show `SDA_SKILL.md` and the `Future of writing` folder in the file explorer on the left.
+VS Code should show `SDA_SKILL.md` and the `Name of your Article` folder in the file explorer on the left.
 
 Inside VS Code, create the first specification file:
 
-1. In the left file explorer, right-click `Future of writing`.
+1. In the left file explorer, right-click `Name of your Article`.
 2. Select **New File**.
 3. Name the file `00_SPEC.md`.
 
@@ -319,7 +325,7 @@ The folder now looks like this:
 Documents/
 `-- Writing/
     |-- SDA_SKILL.md
-    `-- Future of writing/
+    `-- Name of your Article/
         |-- 00_SPEC.md
         `-- Images/
 ```
@@ -328,15 +334,15 @@ Documents/
 
 At this point, the writer has done the Windows tasks. Now Codex can do the technical setup.
 
-Open the Codex sidebar and paste this prompt:
+Open the Codex sidebar and paste this prompt. If you did not name your folder exactly `Name of your Article`, replace that phrase with your folder's real name before sending.
 
 ```text
-Read SDA_SKILL.md and the article folder "Future of writing".
+Read SDA_SKILL.md and the article folder "Name of your Article".
 
 I am a writer, not a developer.
 Please set up this Writing folder for Specification-Driven Authoring.
 
-First, check that "Future of writing/00_SPEC.md" exists.
+First, check that "Name of your Article/00_SPEC.md" exists.
 If it does not exist, create it.
 
 Then set up Git versioning for this Writing folder.
@@ -373,7 +379,7 @@ When setup is complete, the writer should be able to use ordinary commands in co
 Later, after the specification is approved, the article folder can grow into:
 
 ```text
-Future of writing/
+Name of your Article/
 |-- 00_SPEC.md
 |-- 01_RESEARCH_PLAN.md
 |-- 02_SOURCES.md
@@ -504,7 +510,17 @@ The future of writing is not just better autocomplete. It is not just chatbots i
 
 But that collaboration needs discipline.
 
-If writers simply ask for drafts, they risk getting fluent prose without enough authorship. If they reject all AI assistance, they may miss a tool that can help them think, organize, verify, and revise. Specification-Driven Authoring is one attempt to find the middle path.
+There is real resistance to AI-assisted writing, and sometimes that resistance is correct. LLMs can generate a lot of fluent nothing: generic text, weak claims, fake confidence, and what people now call AI slop [10]. A bad article does not become good because a human typed every word, and a useful article does not become useless because AI helped the writer organize it. The only serious path is to judge the work, the process, the sources, and the responsibility behind it.
+
+I also do not want to pretend that tool evolution is painless. My parents were translators and court interpreters, and I also worked as a court interpreter earlier in life. In my own family, translation was a skilled and respectable profession. I saw that profession pressured over time: first by computer-assisted workflows and market changes, later by machine translation, and now by AI. Google describes Translate as beginning as an AI experiment in 2006, using statistical machine learning and language models, before a major shift to neural networks in 2016 [23]. Translation researchers have described how machine translation changes the translator's work toward checking, evaluating, and monitoring output rather than simply translating from a blank page [24]. A recent INSEAD working paper even uses Google's neural translation rollout in 2016-2017 as evidence of reduced human translation transactions in an online labor market [25].
+
+So yes, I understand why people are worried. I have seen a profession close to my family lose some of its old status and pricing power. Many other professions have similar stories, and AI is accelerating the pattern.
+
+But history also teaches caution in the other direction. Technological progress can hurt individuals and professions while still producing broad social benefits, and it can produce risks alongside benefits [26]. Fighting the existence of the tool rarely works. The better question is how to shape the tool, who gets access to it, what standards surround it, and whether ordinary people can use it without being exploited or misled.
+
+That is why AI-assisted writing matters. It can empower people who are not native speakers. It can help people who are not naturally fluent writers. It can help domain experts share knowledge that might otherwise remain trapped in notes, conversations, or unfinished drafts. Some of those people will have something useful to say. Society benefits when more of that knowledge becomes readable.
+
+Specification-Driven Authoring is one attempt to find the middle path. If writers simply ask for drafts, they risk getting fluent prose without enough authorship. If they reject all AI assistance, they may miss a tool that can help them think, organize, verify, and revise. SDA is a way to use the tool while keeping intent, judgment, evidence, and responsibility visible.
 
 This article presents my current practical version: VS Code, Codex, Git, GitHub, Markdown, and a specification-first workflow. It is not the final answer. Future articles can explore different setups, different tools, and the deeper question of what it means to communicate with computers in natural language.
 
@@ -557,3 +573,11 @@ Until then, we can borrow the developer workflow and make it humane for writers.
 [21] Microsoft, "Extension Marketplace," Visual Studio Code Docs. https://code.visualstudio.com/docs/configure/extensions/extension-marketplace
 
 [22] GitHub Docs, "Creating an account on GitHub." https://docs.github.com/en/get-started/start-your-journey/creating-an-account-on-github
+
+[23] R. Yao, "Celebrating 20 years of Google Translate: Fun facts, tips and new features to try," Google Blog, Apr. 28, 2026. https://blog.google/products-and-platforms/products/translate/fun-facts-google-translate-20-years/
+
+[24] J. DeCamp, "The Impact of Advances in Neural and Statistical MT on the Translation Workforce," Proceedings of AMTA 2018, vol. 2: MT Users' Track, pp. 234-243. https://aclanthology.org/W18-1918/
+
+[25] E. D. Yilmaz, I. Naumovska, and V. A. Aggarwal, "AI-Driven Labor Substitution: Evidence from Google Translate and ChatGPT," INSEAD Working Paper, 2023/24/EFE. https://www.insead.edu/faculty-research/publications/working-papers/ai-driven-labor-substitution-evidence-google-translate
+
+[26] M. Roser, "Technology over the long run: zoom out to see how dramatically the world can change within a lifetime," Our World in Data, Feb. 22, 2023. https://ourworldindata.org/technology-long-run
